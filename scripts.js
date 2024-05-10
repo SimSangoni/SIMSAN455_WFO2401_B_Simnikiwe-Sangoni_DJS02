@@ -15,6 +15,7 @@ form.addEventListener("submit", (event) => {
   } else {
     if (divider === "0"){
       result.innerText = "Division not performed. Invalid number provided. Try again.";
+      result.classList.add("error-message");
       console.error("Math Error! Division by zero attempted.");
     } else if (dividend === "" || divider === ""){
       result.innerText = "Division not performed. Both values are required in inputs. Try again.";
