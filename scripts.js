@@ -21,7 +21,7 @@ form.addEventListener("submit", (event) => {
     } else if (dividend === "" || divider === ""){
       result.innerText = "Division not performed. Both values are required in inputs. Try again.";
       result.classList.add("error-message");
-    } else{
+    } else {
     const divisionResult = dividend / divider;
     result.innerText = Math.floor(divisionResult);
     result.classList.remove("error-message");
