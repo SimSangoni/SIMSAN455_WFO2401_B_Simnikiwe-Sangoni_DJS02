@@ -9,6 +9,7 @@ form.addEventListener("submit", (event) => {
   if (isNaN(dividend) || isNaN(divider)){
     const errorDiv = document.createElement('div');
     errorDiv.textContent = "Something critical went wrong. Please reload the page";
+    errorDiv.classList.add("critical-error");
     document.body.appendChild(errorDiv);
     console.error("Non-numeric input detected.");
 
