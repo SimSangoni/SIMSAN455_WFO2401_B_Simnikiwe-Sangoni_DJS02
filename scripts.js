@@ -19,9 +19,11 @@ form.addEventListener("submit", (event) => {
       console.error("Math Error! Division by zero attempted.");
     } else if (dividend === "" || divider === ""){
       result.innerText = "Division not performed. Both values are required in inputs. Try again.";
+      result.classList.add("error-message");
     } else{
     const divisionResult = dividend / divider;
-    result.innerText = Math.floor(divisionResult)
+    result.innerText = Math.floor(divisionResult);
+    result.classList.remove("error-message");
     }
   }
 });
